@@ -1,0 +1,55 @@
+.social-media {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.7rem;
+}
+
+.social-media a {
+  width: 44px;
+
+  height: 44px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: white;
+
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+
+  padding: 0;
+
+  line-height: 1;
+
+  box-sizing: border-box;
+}
+
+.social-media a svg {
+  width: 18px;
+
+  height: 18px;
+
+  display: block;
+
+  flex-shrink: 0;
+}
+
+.social-media a:hover {
+  transform: translateY(-2px);
+
+  color: #00f5c4;
+
+  border-color: rgba(0, 245, 196, 0.45);
+
+  box-shadow: 0 0 16px rgba(0, 245, 196, 0.18);
+}

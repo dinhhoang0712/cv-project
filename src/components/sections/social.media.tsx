@@ -1,34 +1,36 @@
-import { FaFacebook } from "react-icons/fa6";
-import { SiUdemy } from "react-icons/si";
-import { FaTiktok } from "react-icons/fa";
-import { SiYoutubeshorts } from "react-icons/si";
+import { FaGithub, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
+
+import { MdEmail } from "react-icons/md";
+
+import "./social.media.scss";
+
 interface IProps {
-    youtube: string;
-    facebook: string;
-    tiktok: string;
-    udemy: string
+  github: string;
+  linkedin: string;
+  facebook: string;
+  email: string;
 }
 
-const SocialMedia = (props: IProps) => {
-    const { youtube, tiktok, udemy, facebook } = props;
+const SocialMedia = ({ github, linkedin, facebook, email }: IProps) => {
+  return (
+    <div className="social-media">
+      <a href={github} target="_blank" rel="noreferrer">
+        <FaGithub />
+      </a>
 
-    return (
-        <div className="my-4 d-flex items-center gap-3">
-            <a href={youtube} target='_blank' className="highlight" title="Youtube Hỏi Dân IT">
-                <SiYoutubeshorts size={30} />
-            </a>
-            <a href={tiktok} target='_blank' className="highlight" title="Tiktok Hỏi Dân IT">
-                <FaTiktok size={30} />
-            </a>
-            <a href={udemy} target='_blank' className="highlight" title="Udemy Hỏi Dân IT">
-                <SiUdemy size={30} />
-            </a>
-            <a href={facebook} target='_blank' className="highlight" title="Facebook Hỏi Dân IT">
-                <FaFacebook size={30} />
-            </a>
+      <a href={linkedin} target="_blank" rel="noreferrer">
+        <FaLinkedinIn />
+      </a>
 
-        </div>
-    )
-}
+      <a href={facebook} target="_blank" rel="noreferrer">
+        <FaFacebookF />
+      </a>
+
+      <a href={`mailto:${email}`}>
+        <MdEmail />
+      </a>
+    </div>
+  );
+};
 
 export default SocialMedia;

@@ -2,49 +2,40 @@
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": [
-      "ES2020",
-      "DOM",
-      "DOM.Iterable"
-    ],
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
     "module": "ESNext",
     "skipLibCheck": true,
-    /* Bundler mode */
+
+    // Bundler mode
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
+
     "jsx": "react-jsx",
-    "allowJs": true, //cho phép code js
-    /* Linting */
+    "allowJs": true,
+
+    // Linting
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+
+    // Alias
     "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
+
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "assets/*": [
-        "./src/assets/*"
-      ],
-      "components/*": [
-        "./src/components/*"
-      ],
-      "helpers/*": [
-        "./src/helpers/*"
-      ],
-      "pages/*": [
-        "./src/pages/*"
-      ],
-      "styles/*": [
-        "./src/styles/*"
-      ],
+      "@/*": ["src/*"],
+      "assets/*": ["src/assets/*"],
+      "components/*": ["src/components/*"],
+      "helpers/*": ["src/helpers/*"],
+      "pages/*": ["src/pages/*"],
+      "styles/*": ["src/styles/*"]
     }
   },
-  "include": [
-    "src"
-  ]
+
+  "include": ["src"]
 }

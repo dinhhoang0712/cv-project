@@ -1,28 +1,117 @@
 {
-    "appHeader": {
-        "brand": "Vũ Đình Hoàng",
-        "home": "Trang chủ",
-        "project": "Dự án",
-        "contact": "Liên hệ",
-        "about": "Về tác giả"
+  "appHeader": {
+    "brand": "Vũ Đình Hoàng",
+    "home": "Trang chủ",
+    "project": "Dự án",
+    "contact": "Liên hệ",
+    "about": "Về tác giả"
+  },
+  "heroSection": {
+    "hi": "Xin chào!",
+    "iAm": "Tôi là",
+    "exp": "Kinh nghiệm",
+    "cv": "Tải Resume"
+  },
+  "introSection": {
+    "and": "và",
+
+    "p1": "Tôi là một sinh viên yêu thích",
+
+    "p2": " cùng các công nghệ web hiện đại.",
+
+    "p3": "Tôi thích xây dựng RESTful API và các hệ thống backend bằng",
+
+    "p4": "Ngoài việc lập trình, tôi còn dành thời gian tìm hiểu về",
+
+    "p5": "Tôi cũng đang tìm hiểu về các công nghệ triển khai và hạ tầng như",
+
+    "p6": "Tôi luôn hứng thú với việc tìm hiểu cách các hệ thống lớn được thiết kế, phát triển và triển khai trong thực tế."
+  },
+  "experience": {
+    "title": "Kinh nghiệm làm việc"
+  },
+  "skill": {
+    "title": "Kỹ năng",
+    "subtitle": "Những kiến thức và kỹ năng kỹ thuật tôi đang học hỏi và áp dụng trong quá trình phát triển hệ thống backend.",
+    "techStack": "Công nghệ sử dụng",
+    "techSubtitle": "Những công nghệ và công cụ tôi thường xuyên sử dụng trong các dự án và quá trình học tập của mình."
+  },
+
+  "projects": {
+    "title": "Dự án",
+    "subtitle": "Một số dự án cá nhân và hệ thống tôi đã xây dựng trong quá trình học tập về kỹ thuật phần mềm và phát triển backend.",
+    "laptopShop": {
+      "date": "17 tháng 10, 2024",
+      "description": "Nền tảng thương mại điện tử được xây dựng bằng Spring Boot 3 và Java 21, hỗ trợ xác thực người dùng, giỏ hàng, quản lý đơn hàng và trang quản trị theo mô hình MVC."
     },
-    "heroSection": {
-        "exp": "Kinh nghiệm",
-        "cv": "Tải Resume"
-    },
-    "introSection": {
-        "about": "Giới thiệu",
-        "and": "và",
-        "heading1": "Yêu đơn phương lập trình và tôi tin rằng mình đã học hỏi được ít nhiều điều gì đó. 🤷‍♂️",
-        "heading2": "Tôi nắm vững các ngôn ngữ huyền thoại như là",
-        "heading3": "Lĩnh vực quan tâm của tôi là",
-        "heading4": "xây dựng các công nghệ web mới và các sản phẩm liên quan",
-        "heading5": "Bất cứ khi nào có thể, tôi cũng áp dụng niềm đam mê phát triển sản phẩm của mình với"
-    },
-    "experience": {
-        "title": "Kinh nghiệm làm việc"
-    },
-    "skill": {
-        "title": "Kỹ năng"
+    "bookShop": {
+      "date": "23 tháng 1, 2025",
+      "description": "Hệ thống bán sách thương mại điện tử được xây dựng bằng Spring Boot và React, hỗ trợ xác thực người dùng, quản lý sản phẩm, quy trình đơn hàng và tích hợp thanh toán trực tuyến."
     }
+  },
+
+  "about": {
+    "title": "Giới thiệu",
+    "subtitle": "Một vài thông tin giới thiệu về bản thân, sở thích và định hướng hiện tại của tôi.",
+
+    "intro": {
+      "p1": "Tôi là sinh viên năm 3 ngành Công nghệ Thông tin tại Trường Đại học Khoa học Tự nhiên - Đại học Quốc gia Hà Nội (HUS-VNU), với niềm đam mê dành cho Backend Development và Software Engineering.",
+
+      "p2": "Tôi yêu thích việc xây dựng RESTful APIs, hệ thống backend và các ứng dụng web có khả năng mở rộng bằng những công nghệ như Java, Spring Boot, Node.js, PostgreSQL và Redis.",
+
+      "p3": "Ngoài việc lập trình, tôi thường dành thời gian tìm hiểu về System Design, Software Architecture, Distributed Systems và các công nghệ triển khai như Docker, Kubernetes cùng các workflow cloud-native hiện đại.",
+
+      "p4": "Tôi cũng quan tâm đến các ứng dụng tích hợp AI và thích khám phá cách những hệ thống có khả năng mở rộng được thiết kế, phát triển và vận hành trong môi trường production thực tế.",
+
+      "p5": "Phần lớn kinh nghiệm của tôi đến từ các dự án cá nhân, nơi tôi liên tục cải thiện tư duy giải quyết vấn đề, kỹ năng lập trình và kiến thức về kỹ thuật phần mềm."
+    },
+
+    "interests": {
+      "title": "Lĩnh Vực Quan Tâm",
+      "items": [
+        "Backend Development",
+        "System Design & Microservices",
+        "Distributed Systems",
+        "Cloud & DevOps Technologies",
+        "AI-powered Applications"
+      ]
+    },
+
+    "currentFocus": {
+      "title": "Hiện Tại Đang Tập Trung",
+      "items": [
+        "Cải thiện kỹ năng thiết kế kiến trúc backend",
+        "Học về scalable system design",
+        "Thực hành DevOps và deployment workflows",
+        "Xây dựng các ứng dụng full-stack tích hợp AI"
+      ]
+    },
+
+    "careerGoal": {
+      "title": "Mục Tiêu Nghề Nghiệp",
+      "description": "Mục tiêu của tôi là trở thành Backend Engineer có khả năng xây dựng những hệ thống ổn định, hiệu năng cao và phục vụ cho các ứng dụng thực tế."
+    },
+
+    "funFact": {
+      "title": "Fun Fact",
+      "description": "Đôi khi tôi dành nhiều thời gian để tối ưu và refactor project hơn là hoàn thành nó."
+    },
+
+    "quote": {
+      "text": "Trước tiên hãy giải quyết vấn đề, sau đó mới viết code.",
+      "author": "John Johnson"
+    },
+
+    "education": {
+      "title": "Học Vấn",
+      "duration": "2023 - Hiện tại",
+      "major": "Ngành Khoa học Máy tính",
+      "school": "Trường Đại học Khoa học Tự nhiên - Đại học Quốc gia Hà Nội (HUS-VNU)"
+    },
+
+    "contact": {
+      "title": "Liên Hệ",
+      "description": "Bạn có thể kết nối với tôi thông qua các nền tảng bên dưới."
+    }
+  }
 }

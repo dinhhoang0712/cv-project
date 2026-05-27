@@ -1,28 +1,116 @@
 {
-    "appHeader": {
-        "brand": "Vũ Đình Hoàng",
-        "home": "Home",
-        "project": "Products",
-        "contact": "Contact",
-        "about": "About"
+  "appHeader": {
+    "brand": "Vũ Đình Hoàng",
+    "home": "Home",
+    "project": "Products",
+    "contact": "Contact",
+    "about": "About"
+  },
+  "heroSection": {
+    "hi": "Hi There!",
+    "iAm": "I'M",
+    "exp": "My Skill",
+    "cv": "Get Resume"
+  },
+
+  "introSection": {
+    "and": "and",
+
+    "p1": "I am a student passionate about",
+
+    "p2": " and modern web technologies.",
+
+    "p3": "I enjoy building RESTful APIs and backend systems using",
+
+    "p4": "Besides coding, I spend time learning about",
+
+    "p5": "I am also exploring deployment and infrastructure technologies such as",
+
+    "p6": "I enjoy continuously learning how scalable systems are designed, developed, and deployed in real-world applications."
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "skill": {
+    "title": "Skills",
+    "subtitle": "Core concepts and technical skills I continuously learn and apply in backend development.",
+    "techStack": "Tech Stack",
+    "techSubtitle": "Technologies and tools I frequently use in my projects and learning journey."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Some personal projects and systems I have built while learning software engineering and backend development.",
+    "laptopShop": {
+      "date": "October 17, 2024",
+      "description": "A full-featured e-commerce platform built with Spring Boot 3 and Java 21, featuring authentication, shopping cart, order management, and an admin dashboard following the MVC architecture pattern."
     },
-    "heroSection": {
-        "exp": "My Skill",
-        "cv": "Get Resume"
-    },
-    "introSection": {
-        "about": "About me",
-        "and": "and",
-        "heading1": "I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️",
-        "heading2": "I am fluent in classics like",
-        "heading3": "My field of Interest's are building new",
-        "heading4": "Web Technologies and Products",
-        "heading5": "Whenever possible, I also apply my passion for developing products with"
-    },
-    "experience": {
-        "title": "Dịch vụ"
-    },
-    "skill": {
-        "title": "Skills"
+    "bookShop": {
+      "date": "January 23, 2025",
+      "description": "E-commerce bookstore system built with Spring Boot and React, supporting authentication, product management, order workflows, and online payment integration."
     }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "A brief introduction about myself, my interests, and my current learning journey.",
+
+    "intro": {
+      "p1": "I am a third-year Information Technology student at the University of Science - Vietnam National University, Hanoi (HUS-VNU), with a strong passion for backend development and modern software engineering.",
+
+      "p2": "I enjoy building RESTful APIs, backend systems, and scalable web applications using technologies such as Java, Spring Boot, Node.js, PostgreSQL, and Redis.",
+
+      "p3": "Besides coding, I spend time learning about system design, software architecture, distributed systems, and deployment technologies like Docker, Kubernetes, and cloud-native workflows.",
+
+      "p4": "I am also interested in AI-powered applications and enjoy exploring how scalable systems are designed, developed, and maintained in real-world production environments.",
+
+      "p5": "Most of my experience comes from personal projects, where I continuously improve my problem-solving mindset, coding practices, and software engineering skills."
+    },
+
+    "interests": {
+      "title": "Technical Interests",
+      "items": [
+        "Backend Development",
+        "System Design & Microservices",
+        "Distributed Systems",
+        "Cloud & DevOps Technologies",
+        "AI-powered Applications"
+      ]
+    },
+
+    "currentFocus": {
+      "title": "Current Focus",
+      "items": [
+        "Improving backend architecture skills",
+        "Learning scalable system design",
+        "Practicing DevOps and deployment workflows",
+        "Building full-stack and AI-integrated applications"
+      ]
+    },
+
+    "careerGoal": {
+      "title": "Career Goal",
+      "description": "My goal is to become a Backend Engineer capable of building scalable, reliable, and high-performance systems for real-world applications."
+    },
+
+    "funFact": {
+      "title": "Fun Fact",
+      "description": "I sometimes spend more time optimizing and refactoring projects than actually finishing them."
+    },
+
+    "quote": {
+      "text": "First, solve the problem. Then, write the code.",
+      "author": "John Johnson"
+    },
+
+    "education": {
+      "title": "Education",
+      "duration": "2023 - Present",
+      "major": "Computer Science",
+      "school": "University of Science - Vietnam National University, Hanoi (HUS-VNU)"
+    },
+
+    "contact": {
+      "title": "Contact Me",
+      "description": "Feel free to connect with me through the platforms below."
+    }
+  }
 }

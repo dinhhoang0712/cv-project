@@ -1,0 +1,161 @@
+.app-footer {
+  width: 100%;
+  margin-top: 80px;
+  padding: 50px 20px 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.02);
+
+  backdrop-filter: blur(10px);
+
+  .footer-content {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    margin-bottom: 14px;
+
+    color: #ffffff;
+
+    span {
+      color: #e80576;
+    }
+  }
+
+  .footer-description {
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #b8b8b8;
+  }
+
+  .footer-tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 28px;
+
+    span {
+      padding: 8px 14px;
+
+      border-radius: 999px;
+
+      font-size: 13px;
+      font-weight: 500;
+
+      color: #ffffff;
+
+      background: rgba(255, 255, 255, 0.06);
+
+      border: 1px solid rgba(255, 255, 255, 0.08);
+
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+
+        background: rgba(255, 77, 90, 0.15);
+
+        border-color: rgba(255, 77, 90, 0.4);
+      }
+    }
+  }
+
+  .footer-line {
+    width: 90px;
+    height: 2px;
+
+    margin: 0 auto 22px;
+
+    border-radius: 999px;
+
+    background: linear-gradient(to right, #de3d8d, #e9149a);
+  }
+
+  .footer-copy {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    color: #9f9f9f;
+  }
+
+  .footer-bottom-text {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+
+    color: #7f7f7f;
+  }
+
+  .heart {
+    color: #f15493;
+
+    display: inline-block;
+
+    animation: heartbeat 1.5s infinite;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.15);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .app-footer {
+    padding: 40px 16px 30px;
+
+    .footer-logo {
+      font-size: 26px;
+    }
+
+    .footer-description {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .footer-tech {
+      gap: 10px;
+
+      span {
+        font-size: 12px;
+        padding: 7px 12px;
+      }
+    }
+  }
+}

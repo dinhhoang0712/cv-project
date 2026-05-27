@@ -1,68 +1,79 @@
-import { Col, Row } from 'react-bootstrap';
+import { Col, Row } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
-import avatarImg from "assets/avatar.svg";
-import './introduction.scss';
-import { useTranslation } from 'react-i18next';
+import avatarImg from "assets/avatar.png";
+import "./introduction.scss";
+import { useTranslation } from "react-i18next";
 
 const Introduction = () => {
-    const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
-    return (
-        <section className='introduction-section my-5 my-md-7' style={{ position: "relative" }}>
-            <Row>
-                <Col xs={12} md={9}>
-                    <h2 className='text-center text-md-start'>
-                        {i18n.resolvedLanguage === "en" ? <>
-                            LET ME <span className='text-pink-100'> INTRODUCE </span> MYSELF
-                        </>
-                            :
-                            <>
-                                <span className='text-pink-100'>GIỚI THIỆU</span> BẢN THÂN
-                            </>
-                        }
-                    </h2>
-                    <br />
-                    <p>
-                        {t("introSection.heading1")}
-                        <br />
-                        <br />{t("introSection.heading2")}
-                        <i>
-                            <b className='text-pink-100'> Java {t("introSection.and")} Javascript. </b>
-                        </i>
-                        <br />
-                        <br />
-                        {t("introSection.heading3")} &nbsp;
-                        <i>
-                            <b className='text-pink-100'>
-                                {t("introSection.heading4")}
-                            </b>
-                        </i>
-                        <br />
-                        <br />
-                        {t("introSection.heading5")}
-                        <i><b className='text-pink-100'>&nbsp;Java Spring</b> </i>
-                        {t("introSection.and")}
-                        <i>
-                            <b className='text-pink-100'>
-                                {" "}
-                                Node.js
-                            </b>
-                        </i>
+  return (
+    <section
+      className="introduction-section my-5 my-md-7"
+      style={{ position: "relative" }}
+    >
+      <Row>
+        <Col xs={12} md={9}>
+          <h2 className="text-center text-md-start">
+            {i18n.resolvedLanguage === "en" ? (
+              <>
+                ABOUT <span className="text-pink-100">ME</span>
+              </>
+            ) : (
+              <>
+                <span className="text-pink-100">GIỚI THIỆU</span> BẢN THÂN
+              </>
+            )}
+          </h2>
 
-                    </p>
-                </Col>
-                <Col md={3} className='d-md-block d-none'>
-                    <Tilt>
-                        <img src={avatarImg} className="img-fluid" alt="avatar" />
-                    </Tilt>
-                </Col>
-            </Row>
-            <div className="about-container d-none d-md-flex">
-                <span className="about-label">{t("introSection.about")}</span>
-                <span className="vertical-line"></span>
+          <br />
+
+          <p className="intro-text">
+            {t("introSection.p1")}
+            <span className="text-pink-100"> Backend Development</span>
+            {t("introSection.p2")}
+            <br />
+            <br />
+            {t("introSection.p3")}
+            <span className="text-pink-100"> Java Spring </span>
+            {t("introSection.and")}
+            <span className="text-pink-100"> Node.js</span>
+            .
+            <br />
+            <br />
+            {t("introSection.p4")}
+            <span className="text-pink-100"> System Design</span>,
+            <span className="text-pink-100"> Design Patterns</span>,
+            <span className="text-pink-100"> SOLID Principles </span>
+            {t("introSection.and")}
+            <span className="text-pink-100"> Domain-Driven Design (DDD)</span>
+            .
+            <br />
+            <br />
+            {t("introSection.p5")}
+            <span className="text-pink-100"> Docker </span>
+            {t("introSection.and")}
+            <span className="text-pink-100"> Kubernetes</span>
+            .
+            <br />
+            <br />
+            {t("introSection.p6")}
+          </p>
+        </Col>
+        <Col md={3} className="d-md-block d-none">
+          <Tilt>
+            <div className="avatar-wrapper">
+              <img src={avatarImg} className="img-fluid avatar" alt="avatar" />
             </div>
-        </section>
-    )
-}
+          </Tilt>
+        </Col>
+      </Row>
+      {/* <div className="about-container d-none d-md-flex">
+        <span className="about-label">{t("introSection.about")}</span>
+        <span className="vertical-line"></span>
+      </div> */}
+    </section>
+  );
+};
 
 export default Introduction;
