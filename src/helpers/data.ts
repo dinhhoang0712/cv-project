@@ -1,5 +1,8 @@
 import laptopshop from "/src/assets/project/laptopshop.png";
 import bookshop from "/src/assets/project/bookshop.jpg";
+import webjob from "/src/assets/project/webjob.jpg";
+import voiceAssistant from "/src/assets/project/voice.jpg";
+import whatsapp from "/src/assets/project/whatsapp.png";
 
 export const EXPERIENCES = [
   {
@@ -98,6 +101,59 @@ export const PROJECTS = [
       "REST API",
       "JWT",
       "Bootstrap",
+    ],
+  },
+
+  {
+    id: 3,
+    title: "Web JobHunter",
+    date: "projects.webJobHunter.date",
+    imgPath: webjob,
+    descriptionKey: "projects.webJobHunter.description",
+    githubLink: "https://github.com/dinhhoang0712/web-job",
+    demoLink: "",
+    techStack: ["Spring Boot", "React", "MySQL", "REST API", "JWT", "ANTD"],
+  },
+
+  {
+    id: 4,
+    title: "WhatsApp Clone",
+    date: "projects.whatsappClone.date",
+    imgPath: whatsapp,
+    descriptionKey: "projects.whatsappClone.description",
+    githubLink: "https://github.com/dinhhoang0712/whatsapp",
+    demoLink: "",
+    techStack: [
+      "Spring Boot",
+      "React",
+      "MySQL",
+      "WebSocket",
+      "JWT",
+      "Redux",
+      "Docker",
+    ],
+  },
+
+  {
+    id: 5,
+    title: "Voice Assistant AI Platform",
+    date: "projects.voiceAssistant.date",
+    imgPath: voiceAssistant,
+    descriptionKey: "projects.voiceAssistant.description",
+    githubLink: "https://github.com/dinhhoang0712/voice-assistant",
+    demoLink: "",
+    techStack: [
+      "Node.js",
+      "React",
+      "React Native",
+      "PostgreSQL",
+      "Redis",
+      "Bull MQ",
+      "Docker",
+      "Flask",
+      "Socket.IO",
+      "Grafana",
+      "Github Actions",
     ],
   },
 ];

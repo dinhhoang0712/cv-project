@@ -202,14 +202,6 @@ Dự án được cấu hình để deploy trên Vercel. File `vercel.json` đã
 - **GitHub**: https://github.com/dinhhoang0712
 - **Facebook**: https://www.facebook.com/vu.inh.hoang.443763
 
-## 📄 License
 
-Dự án này được phát triển cho mục đích cá nhân và học tập.
 
-## 🤝 Đóng góp
 
-Nếu bạn muốn đóng góp hoặc có gợi ý cải thiện, hãy tạo issue hoặc pull request trên GitHub.
-
----
-
-© 2024 Vũ Đình Hoàng. Built with ♥ using React & TypeScript.

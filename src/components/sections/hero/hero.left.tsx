@@ -46,9 +46,7 @@ const HeroLeft = (props: IProps) => {
         }}
       />
 
-      <p className="hero-description">
-        Passionate about building scalable backend systems and RESTful APIs.
-      </p>
+      <p className="hero-description">{t("heroSection.description")}</p>
 
       <div className="mt-md-6 mt-3 mb-md-5 mb-2"></div>
       <div className="d-md-flex d-none gap-4">

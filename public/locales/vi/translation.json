@@ -10,7 +10,8 @@
     "hi": "Xin chào!",
     "iAm": "Tôi là",
     "exp": "Kinh nghiệm",
-    "cv": "Tải Resume"
+    "cv": "Tải Resume",
+    "description": "Một nhà phát triển backend đam mê và sinh viên kỹ thuật phần mềm với sự quan tâm mạnh mẽ đến việc xây dựng các hệ thống có khả năng mở rộng và các ứng dụng web hiện đại."
   },
   "introSection": {
     "and": "và",
@@ -47,6 +48,18 @@
     "bookShop": {
       "date": "23 tháng 1, 2025",
       "description": "Hệ thống bán sách thương mại điện tử được xây dựng bằng Spring Boot và React, hỗ trợ xác thực người dùng, quản lý sản phẩm, quy trình đơn hàng và tích hợp thanh toán trực tuyến."
+    },
+    "webJobHunter": {
+      "date": "15 tháng 3, 2025",
+      "description": "Ứng dụng web tìm kiếm việc làm được xây dựng bằng Spring Boot và React, cung cấp tính năng đăng ký/đăng nhập, tạo hồ sơ cá nhân, tìm kiếm việc làm và quản lý ứng tuyển."
+    },
+    "whatsappClone": {
+      "date": "24 tháng 5, 2025",
+      "description": "Ứng dụng nhắn tin thời gian thực lấy cảm hứng từ WhatsApp, hỗ trợ trò chuyện riêng/group, xác thực JWT, giao tiếp WebSocket và quản lý trò chuyện với Spring Boot và React."
+    },
+    "voiceAssistant": {
+      "date": "5 tháng 3, 2026",
+      "description": "Nền tảng trợ lý ảo AI được xây dựng với kiến trúc microservices, hỗ trợ tương tác giọng nói thời gian thực, điều phối AI, xử lý giọng nói, tự động hóa CI/CD và giám sát observability."
     }
   },
 

@@ -10,7 +10,8 @@
     "hi": "Hi There!",
     "iAm": "I'M",
     "exp": "My Skill",
-    "cv": "Get Resume"
+    "cv": "Get Resume",
+    "description": "A passionate backend developer and software engineering student with a strong interest in building scalable systems and modern web applications."
   },
 
   "introSection": {
@@ -47,6 +48,18 @@
     "bookShop": {
       "date": "January 23, 2025",
       "description": "E-commerce bookstore system built with Spring Boot and React, supporting authentication, product management, order workflows, and online payment integration."
+    },
+    "webJobHunter": {
+      "date": "March 15, 2025",
+      "description": "A job hunting web application built with Spring Boot and React, providing features for user registration/login, personal profile creation, job search, and application management."
+    },
+    "whatsappClone": {
+      "date": "May 24, 2025",
+      "description": "Real-time messaging application inspired by WhatsApp, supporting private/group chat, JWT authentication, WebSocket communication, and chat management with Spring Boot and React."
+    },
+    "voiceAssistant": {
+      "date": "March 5, 2026",
+      "description": "Production-grade AI voice assistant platform built with microservices architecture, supporting real-time voice interaction, AI orchestration, speech processing, CI/CD automation, and observability monitoring."
     }
   },
   "about": {
