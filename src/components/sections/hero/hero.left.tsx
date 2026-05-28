@@ -15,7 +15,7 @@ const HeroLeft = (props: IProps) => {
   };
   const handelDownloadCV = () => {
     openInNewTab(
-      "https://drive.google.com/file/d/1Wv9uglvTU9oflierfuI3Ksuxzb5KLC5v/view?pli=1",
+      "https://drive.google.com/file/d/1WhMoPvGf_E3CIdSLTBewj-upTdB3Xp03/view?usp=sharing",
     );
   };
   return (
