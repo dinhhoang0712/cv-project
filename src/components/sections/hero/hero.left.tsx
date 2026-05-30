@@ -9,15 +9,7 @@ interface IProps {
 }
 const HeroLeft = (props: IProps) => {
   const { t } = useTranslation();
-  const openInNewTab = (url: string): void => {
-    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    if (newWindow) newWindow.opener = null;
-  };
-  const handelDownloadCV = () => {
-    openInNewTab(
-      "https://drive.google.com/file/d/1WhMoPvGf_E3CIdSLTBewj-upTdB3Xp03/view?usp=sharing",
-    );
-  };
+
   return (
     <div className="hero-left">
       <h3>
@@ -60,11 +52,16 @@ const HeroLeft = (props: IProps) => {
             color: "var(--text-white-1)",
           }}
         />
-        <ResizeButton
-          onClick={handelDownloadCV}
-          btnText={t("heroSection.cv")}
-          btnIcons={<MdFileDownload />}
-        />
+        <a
+          href="https://drive.google.com/file/d/1WhMoPvGf_E3CIdSLTBewj-upTdB3Xp03/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ResizeButton
+            btnText={t("heroSection.cv")}
+            btnIcons={<MdFileDownload />}
+          />
+        </a>
       </div>
     </div>
   );
