@@ -162,13 +162,13 @@ const About = () => {
           </p>
           <SocialMedia
             github="https://github.com/dinhhoang0712"
-            linkedin=""
+            linkedin="https://www.linkedin.com/in/ho%C3%A0ng-v%C5%A9-765750412"
             facebook="https://www.facebook.com/vu.inh.hoang.443763"
             email="vuhoang5053@gmail.com"
           />
           <div className="contact-phone">
             <FaPhone className="me-2" />
-            <span>0343721388</span>
+            <span>84+ 343 721 388</span>
           </div>
 
           <div className="contact-phone">

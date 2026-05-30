@@ -4,10 +4,8 @@ import "./hero.scss";
 import ResizeButton from "components/sections/resize.button";
 import { MdFileDownload } from "react-icons/md";
 import { AiFillFire } from "react-icons/ai";
-interface IProps {
-  scrollToExperienceSection: () => void;
-}
-const HeroLeft = (props: IProps) => {
+
+const HeroLeft = () => {
   const { t } = useTranslation();
 
   return (
@@ -43,7 +41,7 @@ const HeroLeft = (props: IProps) => {
       <div className="mt-md-6 mt-3 mb-md-5 mb-2"></div>
       <div className="d-md-flex d-none gap-4">
         <ResizeButton
-          onClick={props.scrollToExperienceSection}
+          href="https://github.com/dinhhoang0712"
           btnText={t("heroSection.exp")}
           btnIcons={<AiFillFire style={{ color: "orange" }} />}
           btnStyle={{
@@ -52,16 +50,11 @@ const HeroLeft = (props: IProps) => {
             color: "var(--text-white-1)",
           }}
         />
-        <a
+        <ResizeButton
           href="https://drive.google.com/file/d/1WhMoPvGf_E3CIdSLTBewj-upTdB3Xp03/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ResizeButton
-            btnText={t("heroSection.cv")}
-            btnIcons={<MdFileDownload />}
-          />
-        </a>
+          btnText={t("heroSection.cv")}
+          btnIcons={<MdFileDownload />}
+        />
       </div>
     </div>
   );

@@ -67,7 +67,7 @@ function AppHeader() {
             <div className="header-actions">
               <SocialMedia
                 github="https://github.com/dinhhoang0712"
-                linkedin=""
+                linkedin="https://www.linkedin.com/in/ho%C3%A0ng-v%C5%A9-765750412"
                 facebook="https://www.facebook.com/vu.inh.hoang.443763"
                 email="vuhoang5053@gmail.com"
               />
