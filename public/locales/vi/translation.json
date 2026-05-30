@@ -60,6 +60,10 @@
     "voiceAssistant": {
       "date": "5 tháng 3, 2026",
       "description": "Nền tảng trợ lý ảo AI được xây dựng với kiến trúc microservices, hỗ trợ tương tác giọng nói thời gian thực, điều phối AI, xử lý giọng nói, tự động hóa CI/CD và giám sát observability."
+    },
+    "techRadar": {
+      "date": "Tháng 4, 2026 - Hiện tại",
+      "description": "Phát triển nền tảng phân tích xu hướng công nghệ thu thập và phân tích dữ liệu thị trường CNTT Việt Nam sử dụng Knowledge Graph, Graph RAG và Machine Learning. Xây dựng backend Spring Boot mô-đun với Kiến trúc Lục giác, tích hợp Neo4j, PostgreSQL, Redis, dịch vụ AI và bảng điều khiển tương tác để khám phá xu hướng công nghệ."
     }
   },
 

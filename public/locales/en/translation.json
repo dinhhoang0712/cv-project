@@ -60,6 +60,10 @@
     "voiceAssistant": {
       "date": "March 5, 2026",
       "description": "Production-grade AI voice assistant platform built with microservices architecture, supporting real-time voice interaction, AI orchestration, speech processing, CI/CD automation, and observability monitoring."
+    },
+    "techRadar": {
+      "date": "April 2026 - Present",
+      "description": "Developed a technology trend analytics platform that collects and analyzes Vietnamese IT market data using Knowledge Graph, Graph RAG, and Machine Learning. Built a modular Spring Boot backend with Hexagonal Architecture, integrated Neo4j, PostgreSQL, Redis, AI services, and interactive dashboards for technology trend exploration."
     }
   },
   "about": {

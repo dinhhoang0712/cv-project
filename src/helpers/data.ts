@@ -3,6 +3,7 @@ import bookshop from "/src/assets/project/bookshop.jpg";
 import webjob from "/src/assets/project/webjob.jpg";
 import voiceAssistant from "/src/assets/project/voice.jpg";
 import whatsapp from "/src/assets/project/whatsapp.png";
+import techRadar from "/src/assets/project/techradar.jpg";
 
 export const EXPERIENCES = [
   {
@@ -154,6 +155,31 @@ export const PROJECTS = [
       "Socket.IO",
       "Grafana",
       "Github Actions",
+    ],
+  },
+
+  {
+    id: 6,
+    title: "TechRadar VN",
+    date: "projects.techRadar.date",
+    imgPath: techRadar,
+    descriptionKey: "projects.techRadar.description",
+    githubLink: "https://github.com/dinhhoang0712/techradar-vn",
+    demoLink: "",
+
+    techStack: [
+      "Java 21",
+      "Spring Boot",
+      "WebFlux",
+      "Hexagonal Architecture",
+      "React",
+      "PostgreSQL",
+      "Neo4j",
+      "Redis",
+      "FastAPI",
+      "Graph RAG",
+      "Machine Learning",
+      "Docker",
     ],
   },
 ];
