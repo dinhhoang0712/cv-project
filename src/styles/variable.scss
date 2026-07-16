@@ -24,6 +24,9 @@ $light-theme: (
     text-pink-200: #bd21b8,
     text-blue-100: #1dd2ec,
     text-white: #000,
+    text-white-1: rgba(10, 12, 30, 0.88),
+    text-white-2: rgba(10, 12, 30, 0.68),
+    text-white-3: rgba(10, 12, 30, 0.48),
 
     line-blue-500: #1a1443,
     resize-button: "linear-gradient(to right, #ec4899, #8b5cf6)",
@@ -31,7 +34,21 @@ $light-theme: (
     skill-card-background: #f5f6f7,
     border-top-skill-card: "linear-gradient(to right, transparent, #fff, #fff, transparent)",
 
+    aurora-1: rgba(139, 92, 246, 0.07),
+    aurora-2: rgba(236, 72, 153, 0.06),
+    aurora-3: rgba(0, 217, 255, 0.06),
 
+    navbar-bg: rgba(255, 255, 255, 0.55),
+    navbar-bg-scrolled: rgba(255, 255, 255, 0.85),
+    navbar-border: rgba(10, 12, 30, 0.06),
+    navbar-border-scrolled: rgba(10, 12, 30, 0.1),
+
+    surface-1: rgba(10, 12, 30, 0.035),
+    surface-2: rgba(10, 12, 30, 0.05),
+    surface-border: rgba(10, 12, 30, 0.1),
+
+    accent-cyan: #0c8f7a,
+    accent-cyan-glow: rgba(12, 143, 122, 0.18),
 );
 
 $dark-theme: (
@@ -56,6 +73,9 @@ $dark-theme: (
     text-pink-200: #bd21b8,
     text-blue-100: #1dd2ec,
     text-white: #fff,
+    text-white-1: rgba(255, 255, 255, 0.92),
+    text-white-2: rgba(255, 255, 255, 0.72),
+    text-white-3: rgba(255, 255, 255, 0.52),
 
     line-blue-500: #1a1443,
     resize-button: "linear-gradient(to right, #ec4899, #8b5cf6)",
@@ -64,7 +84,21 @@ $dark-theme: (
     skill-card-background: #11152c,
     border-top-skill-card: "linear-gradient(to right, transparent,#8b5cf6, #8b5cf6, transparent)",
 
+    aurora-1: rgba(139, 92, 246, 0.24),
+    aurora-2: rgba(236, 72, 153, 0.18),
+    aurora-3: rgba(0, 217, 255, 0.16),
 
+    navbar-bg: rgba(10, 10, 25, 0.4),
+    navbar-bg-scrolled: rgba(10, 10, 25, 0.78),
+    navbar-border: rgba(255, 255, 255, 0.04),
+    navbar-border-scrolled: rgba(255, 255, 255, 0.08),
+
+    surface-1: rgba(255, 255, 255, 0.03),
+    surface-2: rgba(255, 255, 255, 0.05),
+    surface-border: rgba(255, 255, 255, 0.08),
+
+    accent-cyan: #00f5c4,
+    accent-cyan-glow: rgba(0, 245, 196, 0.15),
 );
 
 :root {

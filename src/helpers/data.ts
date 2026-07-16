@@ -1,8 +1,8 @@
-import laptopshop from "/src/assets/project/laptopshop.png";
+import laptopshop from "/src/assets/project/laptopshop.webp";
 import bookshop from "/src/assets/project/bookshop.jpg";
 import webjob from "/src/assets/project/webjob.jpg";
 import voiceAssistant from "/src/assets/project/voice.jpg";
-import whatsapp from "/src/assets/project/whatsapp.png";
+import whatsapp from "/src/assets/project/whatsapp.webp";
 import techRadar from "/src/assets/project/techradar.jpg";
 
 export const EXPERIENCES = [
@@ -70,6 +70,8 @@ export const PROJECTS = [
 
     demoLink: "",
 
+    featured: false,
+
     techStack: [
       "Spring Boot",
       "Java 21",
@@ -95,6 +97,8 @@ export const PROJECTS = [
 
     demoLink: "",
 
+    featured: false,
+
     techStack: [
       "Spring Boot",
       "React",
@@ -113,6 +117,7 @@ export const PROJECTS = [
     descriptionKey: "projects.webJobHunter.description",
     githubLink: "https://github.com/dinhhoang0712/web-job",
     demoLink: "",
+    featured: false,
     techStack: ["Spring Boot", "React", "MySQL", "REST API", "JWT", "ANTD"],
   },
 
@@ -124,6 +129,7 @@ export const PROJECTS = [
     descriptionKey: "projects.whatsappClone.description",
     githubLink: "https://github.com/dinhhoang0712/whatsapp",
     demoLink: "",
+    featured: false,
     techStack: [
       "Spring Boot",
       "React",
@@ -143,6 +149,7 @@ export const PROJECTS = [
     descriptionKey: "projects.voiceAssistant.description",
     githubLink: "https://github.com/dinhhoang0712/voice-assistant",
     demoLink: "",
+    featured: false,
     techStack: [
       "Node.js",
       "React",
@@ -166,6 +173,7 @@ export const PROJECTS = [
     descriptionKey: "projects.techRadar.description",
     githubLink: "https://github.com/dinhhoang0712/techradar-vn",
     demoLink: "",
+    featured: true,
 
     techStack: [
       "Java 21",

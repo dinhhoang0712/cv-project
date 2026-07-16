@@ -2,9 +2,11 @@ import { useEffect } from 'react';
 import './glow-card.scss';
 interface IProps {
   children: React.ReactNode;
-  identifier: string
+  identifier: string;
+  className?: string;
+  bare?: boolean;
 }
-const GlowCard = ({ children, identifier }: IProps) => {
+const GlowCard = ({ children, identifier, className = "", bare = false }: IProps) => {
   useEffect(() => {
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`)! as HTMLElement;
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`)! as NodeListOf<HTMLElement>;
@@ -72,7 +74,9 @@ const GlowCard = ({ children, identifier }: IProps) => {
 
   return (
     <div className={`glow-container-${identifier} glow-container`}>
-      <article className={`glow-card glow-card-${identifier}`}>
+      <article
+        className={`glow-card glow-card-${identifier} ${bare ? "glow-card--bare" : ""} ${className}`.trim()}
+      >
         <div className="glows"></div>
         {children}
       </article>

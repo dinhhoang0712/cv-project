@@ -1,0 +1,155 @@
+@media print {
+
+    @page {
+        margin: 1.5cm;
+    }
+
+    /* Force a light, ink-friendly palette regardless of the dark/light toggle */
+    :root,
+    [data-bs-theme="dark"] {
+        --background-body: #ffffff;
+        --background-body-tertiary: #ffffff;
+        --text-white: #111111;
+        --text-white-1: #1a1a1a;
+        --text-white-2: #333333;
+        --text-white-3: #555555;
+        --border-hero-right: #cccccc;
+        --surface-1: #f4f4f6;
+        --surface-2: #eeeeef;
+        --surface-border: #cccccc;
+        --glow-card-background: #f4f4f6;
+        --skill-card-background: #f4f4f6;
+    }
+
+    * {
+        animation: none !important;
+        transition: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        filter: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    html,
+    body {
+        background: #ffffff !important;
+        color: #1a1a1a !important;
+        overflow: visible !important;
+    }
+
+    /* --------- */
+    /* Hide chrome / decorative-only elements */
+    /* --------- */
+
+    .app-aurora,
+    .hero-bg-decoration,
+    .custom-navbar,
+    .back-to-top,
+    .scroll-cue,
+    .app-footer,
+    .hero-right-tilt,
+    .hero-glow,
+    .glows,
+    .glow-card::before,
+    .glow-card::after,
+    .avatar-wrapper::before,
+    .Typewriter__cursor,
+    .custom-cursor-dot,
+    .custom-cursor-ring {
+        display: none !important;
+    }
+
+    .mt-7 {
+        margin-top: 0 !important;
+    }
+
+    /* --------- */
+    /* Fix: scroll-reveal elements must not print blank */
+    /* --------- */
+
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    /* --------- */
+    /* Buttons: swap the gradient pill for a plain bordered box */
+    /* (kept plain, not just color-adjusted, since these repeat many */
+    /* times across the page and a filled gradient prints as a heavy */
+    /* solid block on B&W printers) */
+    /* --------- */
+
+    .resize-button {
+        background: #ffffff !important;
+        color: #1a1a1a !important;
+        border: 1.5px solid #999999 !important;
+
+        &::before {
+            display: none !important;
+        }
+    }
+
+    .about-quote {
+        background: #f4f4f6 !important;
+        border: 1px solid #cccccc !important;
+    }
+
+    /* --------- */
+    /* Freeze the tech marquee to a single static row */
+    /* --------- */
+
+    .tech-marquee-wrapper {
+        mask-image: none !important;
+        -webkit-mask-image: none !important;
+        overflow: hidden !important;
+    }
+
+    .rfm-marquee {
+        animation: none !important;
+        transform: none !important;
+    }
+
+    /* --------- */
+    /* Keep contact links usable on paper */
+    /* --------- */
+
+    #about .social-media {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    #about .social-media a {
+        width: auto;
+        height: auto;
+        border: none;
+        background: none;
+        color: #1a1a1a !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px;
+
+        &::after {
+            content: attr(href);
+            font-size: 11px;
+            font-weight: 400;
+            color: #555555;
+        }
+    }
+
+    /* --------- */
+    /* Avoid splitting cards across a page break */
+    /* --------- */
+
+    .skill-group,
+    .project-card-view,
+    .about-info-card,
+    .glow-card,
+    .about-quote,
+    .stats-section,
+    .contact-card {
+        break-inside: avoid;
+    }
+}

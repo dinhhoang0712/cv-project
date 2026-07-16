@@ -7,10 +7,6 @@
 ========================= */
 
 .skills-title {
-  font-size: 2rem;
-
-  font-weight: 700;
-
   margin-bottom: 1rem;
 }
 
@@ -39,9 +35,9 @@
 
   border-radius: 24px;
 
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--surface-1);
 
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--surface-border);
 
   backdrop-filter: blur(10px);
 
@@ -56,6 +52,36 @@
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.25),
     0 0 20px rgba(255, 78, 205, 0.12);
+}
+
+.skill-group-icon {
+  display: grid;
+
+  place-items: center;
+
+  width: 52px;
+
+  height: 52px;
+
+  margin-bottom: 1.1rem;
+
+  border-radius: 16px;
+
+  font-size: 1.4rem;
+
+  color: var(--text-pink-100);
+
+  background: rgba(255, 78, 205, 0.12);
+
+  border: 1px solid rgba(255, 78, 205, 0.18);
+
+  transition: all 0.3s ease;
+}
+
+.skill-group:hover .skill-group-icon {
+  transform: scale(1.08) rotate(-4deg);
+
+  background: rgba(255, 78, 205, 0.2);
 }
 
 .skill-group-title {
@@ -81,9 +107,9 @@
 
   border-radius: 999px;
 
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--surface-2);
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--surface-border);
 
   font-size: 0.9rem;
 
@@ -99,7 +125,7 @@
 
   border-color: #ff4ecd;
 
-  color: white;
+  color: var(--text-white);
 
   box-shadow: 0 0 20px rgba(255, 78, 205, 0.2);
 }
@@ -110,6 +136,12 @@
 
 .tech-stack-container {
   margin-top: 3rem;
+}
+
+.tech-marquee-wrapper {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+
+  mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
 }
 
 .tech-item {
@@ -133,9 +165,9 @@
 
   border-radius: 24px;
 
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--surface-1);
 
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--surface-border);
 
   transition: all 0.3s ease;
 
@@ -163,10 +195,6 @@
 ========================= */
 
 @media (max-width: 768px) {
-  .skills-title {
-    font-size: 1.7rem;
-  }
-
   .skill-group {
     padding: 1.2rem;
   }

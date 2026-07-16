@@ -31,6 +31,47 @@
   "experience": {
     "title": "Kinh nghiệm làm việc"
   },
+  "terminal": {
+    "bootHint": "Gõ \"help\" để xem tất cả lệnh, hoặc bấm gợi ý bên dưới ↓",
+    "placeholder": "Gõ một lệnh… thử \"help\"",
+    "unknownCommand": "không tìm thấy lệnh: {{cmd}} — gõ \"help\" để xem danh sách lệnh.",
+    "help": {
+      "whoami": "giới thiệu ngắn",
+      "skills": "kỹ năng theo nhóm",
+      "projects": "danh sách dự án (gõ \"open <n>\" để mở)",
+      "contact": "thông tin liên hệ",
+      "resume": "mở CV của tôi",
+      "hireMe": "😉",
+      "theme": "đổi theme trang — cách dùng: theme <dark|light>",
+      "clear": "xoá màn hình"
+    },
+    "whoami": "Vũ Đình Hoàng — Sinh viên năm 3 ngành Khoa học Máy tính @ HUS-VNU, thiên về backend, thích distributed systems và clean architecture.",
+    "skillsIntro": "Kỹ năng theo từng nhóm:",
+    "projectsIntro": "Dự án — gõ \"open <n>\" để xem chi tiết:",
+    "openInvalid": "không có dự án #{{n}} — gõ \"projects\" để xem danh sách.",
+    "opening": "Đang mở {{title}} →",
+    "contactIntro": "Liên hệ với tôi qua:",
+    "resumeOpening": "Đang mở CV →",
+    "sudo": {
+      "password": "[sudo] password for visitor: ********",
+      "granted": "Access granted ✅",
+      "cta": "Nhắn tôi ngay →"
+    },
+    "themeUsage": "cách dùng: theme <dark|light>",
+    "themeSwitched": "đã đổi theme sang {{mode}}.",
+    "neofetch": {
+      "os": "Backend Developer",
+      "shell": "Java · Spring · Node.js",
+      "focus": "Microservices, System Design",
+      "uptime": "Năm 3 @ HUS-VNU"
+    }
+  },
+  "stats": {
+    "projects": "Dự Án Đã Xây Dựng",
+    "technologies": "Công Nghệ Đã Dùng",
+    "years": "Năm Lập Trình",
+    "focusAreas": "Lĩnh Vực Trọng Tâm"
+  },
   "skill": {
     "title": "Kỹ năng",
     "subtitle": "Những kiến thức và kỹ năng kỹ thuật tôi đang học hỏi và áp dụng trong quá trình phát triển hệ thống backend.",
@@ -41,6 +82,7 @@
   "projects": {
     "title": "Dự án",
     "subtitle": "Một số dự án cá nhân và hệ thống tôi đã xây dựng trong quá trình học tập về kỹ thuật phần mềm và phát triển backend.",
+    "featuredBadge": "Dự Án Nổi Bật",
     "laptopShop": {
       "date": "17 tháng 10, 2024",
       "description": "Nền tảng thương mại điện tử được xây dựng bằng Spring Boot 3 và Java 21, hỗ trợ xác thực người dùng, giỏ hàng, quản lý đơn hàng và trang quản trị theo mô hình MVC."
@@ -68,20 +110,9 @@
   },
 
   "about": {
-    "title": "Giới thiệu",
-    "subtitle": "Một vài thông tin giới thiệu về bản thân, sở thích và định hướng hiện tại của tôi.",
-
-    "intro": {
-      "p1": "Tôi là sinh viên năm 3 ngành Công nghệ Thông tin tại Trường Đại học Khoa học Tự nhiên - Đại học Quốc gia Hà Nội (HUS-VNU), với niềm đam mê dành cho Backend Development và Software Engineering.",
-
-      "p2": "Tôi yêu thích việc xây dựng RESTful APIs, hệ thống backend và các ứng dụng web có khả năng mở rộng bằng những công nghệ như Java, Spring Boot, Node.js, PostgreSQL và Redis.",
-
-      "p3": "Ngoài việc lập trình, tôi thường dành thời gian tìm hiểu về System Design, Software Architecture, Distributed Systems và các công nghệ triển khai như Docker, Kubernetes cùng các workflow cloud-native hiện đại.",
-
-      "p4": "Tôi cũng quan tâm đến các ứng dụng tích hợp AI và thích khám phá cách những hệ thống có khả năng mở rộng được thiết kế, phát triển và vận hành trong môi trường production thực tế.",
-
-      "p5": "Phần lớn kinh nghiệm của tôi đến từ các dự án cá nhân, nơi tôi liên tục cải thiện tư duy giải quyết vấn đề, kỹ năng lập trình và kiến thức về kỹ thuật phần mềm."
-    },
+    "eyebrow": "Góc Con Người",
+    "title": "Ngoài Công Việc",
+    "subtitle": "Một góc nhìn gần hơn về những điều tôi quan tâm, đang theo đuổi và cách kết nối với tôi.",
 
     "interests": {
       "title": "Lĩnh Vực Quan Tâm",
@@ -127,7 +158,8 @@
     },
 
     "contact": {
-      "title": "Liên Hệ",
+      "eyebrow": "Kết Nối Với Tôi",
+      "title": "Liên Hệ Ngay",
       "description": "Bạn có thể kết nối với tôi thông qua các nền tảng bên dưới."
     }
   }

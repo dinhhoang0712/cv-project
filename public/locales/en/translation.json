@@ -32,6 +32,47 @@
   "experience": {
     "title": "Experience"
   },
+  "terminal": {
+    "bootHint": "Type \"help\" to see all commands, or tap a suggestion below ↓",
+    "placeholder": "Type a command… try \"help\"",
+    "unknownCommand": "command not found: {{cmd}} — type \"help\" to see available commands.",
+    "help": {
+      "whoami": "short introduction",
+      "skills": "skills grouped by category",
+      "projects": "list of projects (type \"open <n>\" to view)",
+      "contact": "contact info",
+      "resume": "open my resume / CV",
+      "hireMe": "😉",
+      "theme": "switch site theme — usage: theme <dark|light>",
+      "clear": "clear the screen"
+    },
+    "whoami": "Vũ Đình Hoàng — 3rd-year Computer Science student @ HUS-VNU, backend-leaning developer who enjoys distributed systems and clean architecture.",
+    "skillsIntro": "Skills, grouped by category:",
+    "projectsIntro": "Projects — type \"open <n>\" to view one:",
+    "openInvalid": "no project #{{n}} — type \"projects\" to see the list.",
+    "opening": "Opening {{title}} →",
+    "contactIntro": "Feel free to reach out:",
+    "resumeOpening": "Opening resume →",
+    "sudo": {
+      "password": "[sudo] password for visitor: ********",
+      "granted": "Access granted ✅",
+      "cta": "Let's talk →"
+    },
+    "themeUsage": "usage: theme <dark|light>",
+    "themeSwitched": "theme switched to {{mode}}.",
+    "neofetch": {
+      "os": "Backend Developer",
+      "shell": "Java · Spring · Node.js",
+      "focus": "Microservices, System Design",
+      "uptime": "3rd year @ HUS-VNU"
+    }
+  },
+  "stats": {
+    "projects": "Projects Built",
+    "technologies": "Technologies Used",
+    "years": "Years Coding",
+    "focusAreas": "Focus Areas"
+  },
   "skill": {
     "title": "Skills",
     "subtitle": "Core concepts and technical skills I continuously learn and apply in backend development.",
@@ -41,6 +82,7 @@
   "projects": {
     "title": "Projects",
     "subtitle": "Some personal projects and systems I have built while learning software engineering and backend development.",
+    "featuredBadge": "Featured Project",
     "laptopShop": {
       "date": "October 17, 2024",
       "description": "A full-featured e-commerce platform built with Spring Boot 3 and Java 21, featuring authentication, shopping cart, order management, and an admin dashboard following the MVC architecture pattern."
@@ -67,20 +109,9 @@
     }
   },
   "about": {
-    "title": "About Me",
-    "subtitle": "A brief introduction about myself, my interests, and my current learning journey.",
-
-    "intro": {
-      "p1": "I am a third-year Information Technology student at the University of Science - Vietnam National University, Hanoi (HUS-VNU), with a strong passion for backend development and modern software engineering.",
-
-      "p2": "I enjoy building RESTful APIs, backend systems, and scalable web applications using technologies such as Java, Spring Boot, Node.js, PostgreSQL, and Redis.",
-
-      "p3": "Besides coding, I spend time learning about system design, software architecture, distributed systems, and deployment technologies like Docker, Kubernetes, and cloud-native workflows.",
-
-      "p4": "I am also interested in AI-powered applications and enjoy exploring how scalable systems are designed, developed, and maintained in real-world production environments.",
-
-      "p5": "Most of my experience comes from personal projects, where I continuously improve my problem-solving mindset, coding practices, and software engineering skills."
-    },
+    "eyebrow": "The Human Side",
+    "title": "Beyond The Code",
+    "subtitle": "A closer look at what drives me, what I'm working on, and how to reach me.",
 
     "interests": {
       "title": "Technical Interests",
@@ -126,7 +157,8 @@
     },
 
     "contact": {
-      "title": "Contact Me",
+      "eyebrow": "Let's Connect",
+      "title": "Get In Touch",
       "description": "Feel free to connect with me through the platforms below."
     }
   }

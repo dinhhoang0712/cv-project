@@ -9,7 +9,7 @@ const HeroLeft = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="hero-left">
+    <div className="hero-left text-center text-md-start">
       <h3>
         {t("heroSection.hi")}{" "}
         <span className="wave" role="img" aria-labelledby="wave">
@@ -20,26 +20,30 @@ const HeroLeft = () => {
         {t("heroSection.iAm")} &nbsp;
         <strong className="brand-red">{t("appHeader.brand")}</strong>
       </h3>
-      <Typewriter
-        options={{
-          strings: [
-            "Software Developer",
-            "Backend Developer",
-            "Java Spring Developer",
-            "Microservices Enthusiast",
-            "System Design Learner",
-          ],
-          autoStart: true,
-          loop: true,
-          deleteSpeed: 50,
-          wrapperClassName: "brand-green",
-        }}
-      />
+      <div className="hero-typewriter">
+        <Typewriter
+          options={{
+            strings: [
+              "Software Developer",
+              "Backend Developer",
+              "Java Spring Developer",
+              "Microservices Enthusiast",
+              "System Design Learner",
+            ],
+            autoStart: true,
+            loop: true,
+            deleteSpeed: 50,
+            wrapperClassName: "brand-green",
+          }}
+        />
+      </div>
 
-      <p className="hero-description">{t("heroSection.description")}</p>
+      <p className="hero-description mx-auto mx-md-0">
+        {t("heroSection.description")}
+      </p>
 
-      <div className="mt-md-6 mt-3 mb-md-5 mb-2"></div>
-      <div className="d-md-flex d-none gap-4">
+      <div className="mt-4 mt-md-6 mb-3 mb-md-5"></div>
+      <div className="d-flex flex-wrap gap-3 gap-md-4 justify-content-center justify-content-md-start">
         <ResizeButton
           href="https://github.com/dinhhoang0712"
           btnText={t("heroSection.exp")}

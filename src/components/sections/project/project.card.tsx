@@ -15,11 +15,22 @@ interface IProps {
   date: string;
 }
 
+const MAX_VISIBLE_TECH = 4;
+
 function ProjectCard(props: IProps) {
+  const visibleTech = props.techStack.slice(0, MAX_VISIBLE_TECH);
+  const hiddenTechCount = props.techStack.length - visibleTech.length;
+
   return (
     <Card className="project-card-view">
       {/* IMAGE */}
       <div className="project-image-wrapper">
+        <div className="browser-bar">
+          <span className="dot dot-red"></span>
+          <span className="dot dot-yellow"></span>
+          <span className="dot dot-green"></span>
+        </div>
+
         <Card.Img
           variant="top"
           src={props.imgPath}
@@ -38,11 +49,17 @@ function ProjectCard(props: IProps) {
 
         {/* TECH STACK */}
         <div className="project-tech-stack">
-          {props.techStack.map((tech, index) => (
+          {visibleTech.map((tech, index) => (
             <span className="project-tech-badge" key={index}>
               {tech}
             </span>
           ))}
+
+          {hiddenTechCount > 0 && (
+            <span className="project-tech-badge project-tech-more">
+              +{hiddenTechCount}
+            </span>
+          )}
         </div>
 
         {/* DESCRIPTION */}

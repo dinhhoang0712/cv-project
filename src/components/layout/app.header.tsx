@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -15,10 +16,15 @@ import SocialMedia from "../sections/social.media";
 
 type ThemeContextType = "light" | "dark";
 
+const SECTION_IDS = ["skills", "projects", "about", "contact"];
+
 function AppHeader() {
   const { theme, setTheme } = useCurrentApp();
 
   const { t, i18n } = useTranslation();
+
+  const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   const handleMode = (mode: ThemeContextType) => {
     localStorage.setItem("theme", mode);
@@ -32,8 +38,45 @@ function AppHeader() {
     i18n.changeLanguage(i18n.resolvedLanguage === "en" ? "vi" : "en");
   };
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const sections = SECTION_IDS.map((id) => document.getElementById(id)).filter(
+      (el): el is HTMLElement => !!el,
+    );
+
+    if (!sections.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible) {
+          setActiveSection(visible.target.id);
+        } else if (window.scrollY < (sections[0]?.offsetTop ?? Infinity) - 200) {
+          setActiveSection("home");
+        }
+      },
+      { rootMargin: "-35% 0px -50% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <Navbar expand="lg" fixed="top" className="custom-navbar">
+    <Navbar
+      expand="lg"
+      fixed="top"
+      className={`custom-navbar ${scrolled ? "scrolled" : ""}`}
+    >
       <Container>
         {/* LOGO */}
         <a className="navbar-brand brand-logo" href="/">
@@ -46,20 +89,39 @@ function AppHeader() {
           <div className="navbar-inner">
             {/* CENTER NAV */}
             <Nav className="mx-auto nav-links">
-              <a href="/" className="nav-item-link">
+              <a
+                href="/"
+                className={`nav-item-link ${activeSection === "home" ? "active" : ""}`}
+              >
                 {i18n.resolvedLanguage === "en" ? "Home" : "Trang chủ"}
               </a>
 
-              <a href="#skills" className="nav-item-link">
+              <a
+                href="#skills"
+                className={`nav-item-link ${activeSection === "skills" ? "active" : ""}`}
+              >
                 {i18n.resolvedLanguage === "en" ? "Skills" : "Kỹ năng"}
               </a>
 
-              <a href="#projects" className="nav-item-link">
+              <a
+                href="#projects"
+                className={`nav-item-link ${activeSection === "projects" ? "active" : ""}`}
+              >
                 {i18n.resolvedLanguage === "en" ? "Projects" : "Dự án"}
               </a>
 
-              <a href="#about" className="nav-item-link">
+              <a
+                href="#about"
+                className={`nav-item-link ${activeSection === "about" ? "active" : ""}`}
+              >
                 {i18n.resolvedLanguage === "en" ? "About" : "Giới thiệu"}
+              </a>
+
+              <a
+                href="#contact"
+                className={`nav-item-link ${activeSection === "contact" ? "active" : ""}`}
+              >
+                {i18n.resolvedLanguage === "en" ? "Contact" : "Liên hệ"}
               </a>
             </Nav>
 
