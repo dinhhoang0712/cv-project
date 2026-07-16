@@ -43,6 +43,7 @@
       "resume": "mở CV của tôi",
       "hireMe": "😉",
       "theme": "đổi theme trang — cách dùng: theme <dark|light>",
+      "github": "số liệu GitHub thật",
       "clear": "xoá màn hình"
     },
     "whoami": "Vũ Đình Hoàng — Sinh viên năm 3 ngành Khoa học Máy tính @ HUS-VNU, thiên về backend, thích distributed systems và clean architecture.",
@@ -64,6 +65,22 @@
       "shell": "Java · Spring · Node.js",
       "focus": "Microservices, System Design",
       "uptime": "Năm 3 @ HUS-VNU"
+    },
+    "github": {
+      "fetching": "Đang lấy số liệu GitHub trực tiếp…",
+      "error": "Chưa lấy được số liệu GitHub lúc này — thử lại sau.",
+      "publicRepos": "Repo công khai:",
+      "followers": "Followers:",
+      "totalStars": "Tổng số sao:",
+      "lastPush": "Push gần nhất:",
+      "memberSince": "Tham gia GitHub từ:",
+      "timeAgo": {
+        "justNow": "vừa xong",
+        "hours": "{{n}} giờ trước",
+        "days": "{{n}} ngày trước",
+        "months": "{{n}} tháng trước",
+        "years": "{{n}} năm trước"
+      }
     }
   },
   "stats": {

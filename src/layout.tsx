@@ -3,11 +3,13 @@ import AppHeader from "./components/layout/app.header"
 import AppFooter from "./components/layout/app.footer"
 import BackToTop from "./components/share/back-to-top"
 import CustomCursor from "./components/share/custom-cursor"
+import ScrollProgress from "./components/share/scroll-progress"
 
 function Layout() {
 
   return (
     <div>
+      <ScrollProgress />
       <CustomCursor />
       <div className="app-aurora" aria-hidden="true">
         <span className="aurora-1"></span>

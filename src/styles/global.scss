@@ -181,6 +181,22 @@ code {
 }
 
 /* --------- */
+/* Scroll progress bar */
+/* --------- */
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    max-width: 100%;
+    background-image: var(--resize-button);
+    z-index: 1050;
+    pointer-events: none;
+    transition: width 0.1s linear;
+}
+
+/* --------- */
 /* Custom cursor */
 /* --------- */
 
